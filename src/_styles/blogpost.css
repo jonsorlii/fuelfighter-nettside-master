@@ -1,0 +1,121 @@
+article {
+    font-size: 18px;
+    line-height: 1.75em;
+    padding: 32px 0;
+}
+
+article > header {
+    margin-top: 1em;
+}
+
+article h5 {
+    /* font-weight: 400; */
+    font-size: 1rem;
+    opacity: 0.7;
+}
+article time {
+    display: block;
+    opacity: 0.7;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}
+
+article > section {
+    font-family: "Noto Serif", "Droid Serif", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+article figure, article p, article ul, article ol, article h1, article h2, article h3, article h4, article h5, article h6, article time, article table {
+    width: var(--content-width);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}  
+
+article p {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    color: rgb(51,51,51);
+}
+
+figure {
+    font-size: 0;
+    /* margin: 2rem 0; */
+    position: relative;
+    text-align: center;
+}
+
+article img {
+    width: 100%;
+    max-width: var(--content-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table {
+    font-size: inherit;
+    margin: 0;
+}
+
+.table figure {
+    width: 100%;
+    margin: 0;
+}
+
+.table td {
+    vertical-align: top;
+    padding: 0;
+    border: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .table tr {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .table td {
+        margin-bottom: 10px;
+    }
+  }
+
+nav ul {
+display: inline-block;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 12px;
+}
+
+.blogpost-share {
+    font-size: 32px;
+    opacity: 0.8;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.blogpost-share:hover {
+    opacity: 1;
+}
+
+.blogpost-share:active {
+    opacity: 0.8;
+}
+
+.blogpost-share[title="facebook"] {
+    fill: #1877F2;
+    color: #1877F2;
+}
+
+.blogpost-share[title="copy"] {
+    fill: #D2D2D2;
+    color: #D2D2D2;
+}

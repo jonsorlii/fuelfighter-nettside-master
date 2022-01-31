@@ -1,0 +1,168 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  /* font-family: 'Roboto', sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  color: #333;
+  fill: #333;
+  font-family: open sans,Helvetica,sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+  /* color: black; */
+  color: #08c;
+}
+
+a:visited {
+  text-decoration: none;
+  /* color: black; */
+  color: #08c;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+h3 {
+  font-weight: bold;
+  color: black;
+  font-size: 22px;
+}
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper>div {
+  position: absolute;
+}
+
+/* CKEditor */
+.ck.ck-content:hover {
+  background-color: #f5f5f5;
+}
+
+.ck-content {
+  font-size: 18px;
+  color: #505050;
+  line-height: 1.6;
+  letter-spacing: .2px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.ck-content figure.table {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.ck-content .table table td.ck-editor__editable, .ck-content .table table th.ck-editor__editable {
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.ck-content .table table td.ck-editor__editable:hover, .ck-content .table table th.ck-editor__editable:hover {
+  background-color: #f5f5f5;
+}
+
+.ck-content .table table {
+  width: 100%;
+  border-color: rgba(0, 0, 0, 0);
+  table-layout: fixed;
+}
+
+@media only screen and (max-width: 750px) {
+  .ck-content .table table tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.ck-content .table table tr td {
+  padding: 0;
+  vertical-align: middle;
+  border: none;
+}
+
+.ck.ck-content blockquote {
+  border-left: none;
+  color: #AFD6AE;
+  background-color: #f5f5f5;
+  display: inline-block;
+  padding: 5px;
+}
+
+.ck-content blockquote>p {
+  display: inline-block;
+  margin: 0;
+}
+
+.ck-content blockquote::after, .ck-content blockquote::before {
+  content: "\"";
+}
+
+.ck-content p {
+  text-align: justify;
+}
+
+.ck-content p {
+  margin-block-end: 3em;
+}
+
+.ck-content p.ck-placeholder {
+  margin: 0;
+}
+
+.ck-content h3 {
+  font-size: 18px;
+  color: #232323;
+}
+
+.ck-content h4 {
+  color: #505050;
+}
+
+/* Blogpost style */
+
+.ck-content.ck-blogpost .table table {
+  border: none;
+}
+
+.ck-content a {
+  display: inline-block;
+  color: rgba(0, 0, 0, 1);
+  box-shadow: inset 0px -3px 0px #AFD6AE;
+  margin-top: 10px;
+  padding: 0 5px;
+  transition: box-shadow ease-out .3s, color .1s .2s;
+  text-decoration: none;
+}
+
+.ck-content a:hover {
+  box-shadow: inset 0px -50px 0px #a5c9a5;
+  color: rgba(255, 255, 255, 1);
+  transition: box-shadow ease-out .3s, color .1s;
+}
+
+.ck-content figure.image {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}

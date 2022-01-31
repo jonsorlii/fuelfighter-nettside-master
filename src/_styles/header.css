@@ -1,0 +1,115 @@
+/* 
+TODO: header scroll linkedin partly hidden 
+TODO: header spacer
+*/
+
+
+:root {
+    --nav-height: 60px;
+}
+
+nav {
+    /* position: fixed; */
+    /* z-index: 1000; */
+    line-height: var(--nav-height);
+    min-height: var(--nav-height);
+    width: 100vw;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: white;
+    padding: 0 20px;
+}
+
+nav.floating {
+    background-color: transparent;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+}
+
+/* nav::before, nav::after {
+    content: "";
+    position: absolute;
+    height: var(--nav-height);
+    width: 40px;
+    top: 0;
+    pointer-events: none;
+}
+
+nav::before { left: 0; background: linear-gradient(to right, white, rgba(255,255,255,0)); }
+nav::after { right: 0; background: linear-gradient(to right, rgba(255,255,255,0), white); } */
+
+nav .nav-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 12px;
+}
+
+nav #logo {
+    line-height: 0;
+    vertical-align: middle;
+}
+
+nav #logo img {
+    height: 35px;
+}
+
+nav a,
+nav a:visited {
+    color: inherit;
+    display: inline-block;
+    fill: inherit;
+    margin: 0;
+}
+
+nav.floating a,
+nav.floating a:visited {
+    color: white;
+}
+
+nav a:focus {
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:visited:hover {
+    opacity: 0.7;
+}
+
+nav a > svg {
+    font-size: 18px !important;
+}
+
+nav:not(.floating) a[title="facebook"] {
+    color: #3B5998;
+    fill: #3B5998;
+}
+
+nav:not(.floating) a[title="instagram"] {
+    color: #c32aa3;
+    fill: #c32aa3;
+}
+
+nav:not(.floating) a[title="youtube"] {
+    color: red;
+    fill: red;
+}
+
+nav:not(.floating) a[title="linkedin"] {
+    color: #2867b2;
+    fill: #2867b2;
+}

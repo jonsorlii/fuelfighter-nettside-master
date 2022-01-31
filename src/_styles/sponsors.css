@@ -1,0 +1,23 @@
+.sponsor,
+.sponsor-main {
+    margin-top: 50px;
+}
+
+.sponsor-main img,
+.sponsor img {
+    margin-bottom: 10px;
+}
+
+.sponsor-main img {
+    height: 150px;
+}
+
+.sponsor img {
+    height: 56px;
+}
+
+.sponsor p,
+.sponsor-main p {
+    line-height: 1.5rem;
+    opacity: 0.9;
+}

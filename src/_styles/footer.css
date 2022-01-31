@@ -1,0 +1,72 @@
+footer {
+    color: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+footer > * {
+    padding: 6px 12px;
+    margin: 0;
+}
+
+@media (min-width: 650px) {
+    footer {
+        justify-content: space-between;
+    }
+
+    footer > * {
+        padding: 0 12px;
+    }
+}
+
+footer > div > * {
+    display: inline-block;
+}
+
+footer > div > p,
+footer > div > div > a,
+footer > ul {
+    opacity: 0.8;
+    text-align: center;
+    list-style: none;
+}
+
+@media (min-width: 375px) {
+    footer > p {
+        float: left;
+    }
+
+    footer > ul {
+        float: right;
+    }
+}
+
+footer > ul li {
+    display: inline-block;
+}
+
+footer ul li + li,
+footer p a {
+    margin-left: 12px;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer i.fa {
+    font-size: 16px;
+}
+
+footer a:focus i.fa {
+    color: #08c;
+    text-shadow: 0 1px 6px #08c;
+}
+
+footer ul li a:focus {
+    outline: none;
+}
