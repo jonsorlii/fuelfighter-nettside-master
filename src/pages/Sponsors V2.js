@@ -25,6 +25,7 @@ import VectorNav from '../assets/sponsors/colored/VectorNav.svg'
 import MomentumIndustrial from '../assets/sponsors/colored/momentumIndustrial.jpg'
 import nskog from '../assets/sponsors/colored/Nskog.png'
 import EWGlassOgPlast from '../assets/sponsors/colored/EWGlassOgPlast.jpg'
+import FRAMO from '../assets/sponsors/colored/FRAMO.png'
 
 export default function Sponsors() {
     return (
@@ -54,12 +55,12 @@ export default function Sponsors() {
                     <h2>Platinum sponsors</h2>
                     <div className="sponsor third">
                         <img alt="Ouster" src={Ouster}  />
-                        <p>Ouster is a team of software, hardware, business, and manufacturing experts building the next generation of high-resolution lidar sensors.<br/><br/></p>
+                        <p>Ouster is a team of software, hardware, business, and manufacturing experts building the next generation of high-resolution lidar sensors.<br/><br/><br/><br/></p>
                         <a target="_blank" rel="noopener noreferrer" href="https://ouster.com/" className="button flat">Visit</a>
                     </div>
                     <div className="sponsor third">
                         <img alt="Alva industries" src={AlvaIndustries} />
-                        <p>Alva was founded to meet the growing global energy demand with renewable technologies. We develop electric generators for production of clean energy and electric motors to convert this energy into motion.</p>
+                        <p>Alva was founded to meet the growing global energy demand with renewable technologies. We develop electric generators for production of clean energy and electric motors to convert this energy into motion. <br/><br/><br/></p>
                         <a target="_blank" rel="noopener noreferrer" href="https://alvaindustries.com/" className="button flat">Visit</a>
                     </div>
                     <div className="sponsor third">
@@ -84,20 +85,25 @@ export default function Sponsors() {
                     <h2>Silver sponsors</h2>
                     <div className="sponsor third" >
                         <img alt="4test" src={FourTest} />
-                        <p>4Test is a leader in measurement solutions and expertise, building on the foundation of Keysight Technologies measurement equipment and technology. Our Mission is to provide engineers, Scientists and technicians the best-fit measurement solutions to help them to measure, test and validate the performance of their electronic, wireless and photonic devices.</p>
+                        <p>4Test is a leader in measurement solutions and expertise, building on the foundation of Keysight Technologies measurement equipment and technology. Our Mission is to provide engineers, Scientists and technicians the best-fit measurement solutions to help them to measure, test and validate the performance of their electronic, wireless and photonic devices. <br/> <br/></p>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.4test.no" className="button flat">Visit</a>
                     </div>
                     <div className="sponsor third">
                         <img alt="Zolve" src={Zolve} />
-                        <p>Zolve AS har utspring fra teknologimiljøet i Trondheim, og tilbyr konsulenttjenester til et vidt spekter av bedrifter. De er spesialister innen elektronikk, FPGA og software, med til sammen over 60 års erfaring som blant annet utviklingsingeniører og prosjektledere.</p>
+                        <p>Zolve originates from Trondheims technological environment, and offers consulting services to a wide range of companies. Zolve is spesialists in electronics, FPGA and software, with over 60 years of experience, a core part of Zolve's success comes from openness and close communication between customer and developer, which are essential in order to achieve the best result.</p>
                         <a target="_blank" rel="noopener noreferrer" href="https://zolve.no/" className="button flat">Visit</a>
+                    </div> 
+                    <div className="sponsor third">
+                        <img alt="Framo" src={FRAMO} />
+                        <p>Based in Bergen, Norway, Framo has been the recognized leader in pumping systems for the marine industry for more than half a century. Customers around the globe turn to them, both for pumps and for expertise in meeting their challenges. Discover Framos unique solutions on their website. <br/><br/><br/><br/></p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.framo.com/" className="button flat">Visit</a>
                     </div> 
                 </div>
                 <div className="grid">
                     <h2>Bronze sponsors</h2>
                     <div className="sponsor third">
                         <img alt="Lindberg & Lund" src={LindbergLund} />
-                        <p>Lindberg & Lund AS importerer og distribuerer konstruksjonslim, smøremidler, slippmidler, komposittmaterialer, innstøpingsmasser og hjelpestoffer for elektronikkindustrien.<br/><br/></p>
+                        <p>Lindberg & Lund AS imports and distributes construction adhesives, lubricants, release agents, composite materials, grouts and auxiliaries for the electronics industry.<br/><br/></p>
                         <a target="_blank" rel="noopener noreferrer" href="https://lindberg-lund.no/" className="button flat">Visit</a>
                     </div> 
                     <div className="sponsor third">
@@ -113,7 +119,7 @@ export default function Sponsors() {
                     <div className="sponsor third">
                         <img alt="Nskog" src={nskog} />
                         <p>Norske Skog Skogn is actively working towards the green shift and the global circular economy through value creation of renewable resources such as norwegian 
-                        spruce and hydro power. <br/><br/></p>
+                        spruce and hydro power. <br/><br/> <br/> <br/><br/></p>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.norskeskog.com/" className="button flat">Visit</a>
                     </div>
                      <div className="sponsor third">
@@ -131,17 +137,17 @@ export default function Sponsors() {
                     </div>
                     <div className="sponsor third">
                         <img alt="HPC" src={HPC} />
-                        <p>Vi utfører tjenester for industri, næring og private kunder. Vi ønsker å være med i utviklingen, og vi ønsker å gjøre din produksjon mulig. Ved å bruke oss vil du se at dere sparer tid og penger, og øker kvaliteten.</p>
+                        <p>HPC performs services for industry and private customers. They want to be part of the development, and make your production possible. By using HPC, you will see that you save time, money, and increase quality.</p>
                         <a target="_blank" rel="noopener noreferrer" href="http://www.hpcomposites.no/" className="button flat">Visit</a>
                     </div> 
                     <div className="sponsor third">
                         <img alt="Trondheim stål" src={TrondheimStaal} />
-                        <p>Trondheim Stål ble stiftet i 1989 og er en stålentreprenør med hovedtyngde i stålkonstruksjoner for bygg, anlegg, smelteverk og prosessindustri.<br/><br/></p>
+                        <p>Trondheim Stål was founded in 1989 and is a steel contractor with main focus on steel structures for construction, civil engineering, smelters and the process industry.<br/><br/></p>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.trondheimstaal.com/" className="button flat">Visit</a>
                     </div>
                     <div className="sponsor third">
                         <img alt="IDE House" src={IDE} />
-                        <p>IDÉ House of Brands leverer profilprodukter, klær, gaver, merkevarer og kampanjeprodukter til bedriftsmarkedet.<br/><br/><br/></p>
+                        <p>IDÉ House of Brands delivers profile products, clothing, gifts, brands and promotional products to the corporate market.<br/><br/><br/></p>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.idegroup.no" className="button flat">Visit</a>
                     </div>
                     <div className="sponsor third">
@@ -151,7 +157,7 @@ export default function Sponsors() {
                     </div>
                     <div className="sponsor third">
                         <img alt="MomentumIndustrial" src={MomentumIndustrial} />
-                        <p> Momentum er en av Sveriges ledende leverandører av industrikomponenter. De har et sortiment med produkter i områdene kulelager, tetninger, girkasser, elmotorer, mekatronik, girkasser og pumper. </p>
+                        <p>Momentum is one of Sweden's leading suppliers of industrial components. They have a range of products in the areas of bearings, seals, gearboxes, electric motors, mechatronics, gearboxes and pumps. </p>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.momentum-industrial.com/" className="button flat">Visit</a>
                     </div> 
                 </div>
