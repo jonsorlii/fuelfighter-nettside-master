@@ -150,7 +150,7 @@ function JoinForm() {
 	// const positions = ["Marketing", "Mechanical", "Autonomous", "Electrical", "Design", "Group Leader"];
 	// const positions = ['Project Manager', 'Assistant project manager', 'Head of Finance', 'Technical leader', 'Systems Engineer', 'Mechanical Group Leader', 'Autonomous Group Leader', 'Electrical Group Leader', 'Design Group Leader', 'Marketing Group Leader', 'Open Application']
 	//const positions = ["Head of Finance", "Mechanical Group Leader", "Design Group Leader", "Marketing Group Leader", "Mechanical Member", "Design Member", "Software Member", "Autonomous Member", "Electrical Member", "Social Media", "Web Developer", "Photo and Video", "Graphical Design", "Business Relations", "Event Manager", "Open Application"];
-	const positions = ["Front Suspension", "Rear Suspension", "Exterior Design", "Foil", "Steering Wheel", "Driver's Seat", "R&D - Hydrogen", "Content Creator"];
+	const positions = ["Open application"];
 	const handleCheckbox = (event, position) => {
 		if (event.target.value && form.selectedPositions.indexOf(position) === -1) {
 			form.selectedPositions.push(position);
@@ -379,16 +379,17 @@ export default function Join() {
 							</ul>" 
 					/> */}
 				</PositionsContainer>
+				{/*
+				<PositionsContainer>
 				
 				<h2>Mechanical</h2>
 				
-				<PositionsContainer>
-					{/*
+					
 					<PositionCard 
 						position="Mechanical Group" 
 						description="The mechanical team spends their time thinking about new solutions and optimizing parts with FEA software and testing. In February they start the manufacturing and assembly process. With the exception of standardized parts, the team performs all of the manufacturing themselves. Partners help us with tooling and advice for the most involved parts."
 					/>
-					*/}
+					
 					<PositionCard 
 						position="Front suspension" 
 						description="The front suspension carries the majority of the weight while providing dampening. Being one of the most dangerous points of failure, the designs have to be analyzed and testet comprehensively. There has historically been a lot of freedom and change here, and this year we have a new system that has yet to be tested."
@@ -434,10 +435,16 @@ export default function Join() {
 					<PositionCard 
 						position="Wheels" 
 						description="When it comes to weight reduction, the wheels of a car is the area where it makes the biggest impact. Being rotational mass, these contribute to the inertia of the vehicle more than any other component. Being custom made of prepreg carbon fiber, our current design is far from heavy. However, through some creative redesign, they can potentially be made even lighter."
-					/>		*/}			
+					/>			
 				</PositionsContainer> 
-				<h2>Research and Development - Hydrogen</h2>
+	*/}		
+
+					{/* 
+
 				<PositionsContainer>
+			
+				<h2>Research and Development - Hydrogen</h2>
+			
 					<PositionCard 
 						position="R&D Hydrogen" 
 						description="We are looking into the transition of building our electrical car to a hydrogen one; this means we need a team specifically grouped to research about hydrogen fuel cells, all the risks of moving from electric to hydrogen and the requirements we will need to transition. "
@@ -450,17 +457,19 @@ export default function Join() {
 					<PositionCard 
 						position="Y" 
 						description=""
-					/>*/}	
+					/>
+						
 				</PositionsContainer> 
-		
+				*/}
+				{/*
 				<h2>Design</h2>
 				<PositionsContainer>
-					{/*}
+					}
 					<PositionCard 
 						position="Design Group" 
 						description="As a member of the design team, you will inherit the concept we have been working on for the last year, developing it further, and eventually producing the car and completing in the 2022 Shell Eco Marathon. The design process involves physical and digital testing of aerodynamics, strength, ergonomics, and aesthetics. You will be drawing, building clay-models, and modelling in Fusion 360. You will follow the concept all the way from a CAD-file to a competitive concept car, cooperate with other skilled students from a variety of professions, and work as a team to overcome the challenges along the way."
 					/>
-					*/}
+					
 					<PositionCard 
 						position="Exterior Design" 
 						description="The focus on this role is externally visible parts, except the foil. This mainly consists of lights and wheels. CAD and freefrom modeling experience is beneficial."
@@ -475,7 +484,7 @@ export default function Join() {
 						description="There are a lot of components which play a major part in the interior design of a car. It needs to incorporate (1) aesthetics, (2) a user-friendly experience and (3) a significant amount of technical functionality. Responsibilities under Interior includes designing of the steering wheel, dashboard, and seat, where everything needs to be put together and that the design allows the driver to interact with the car as smoothly as possible.
 										Under the Interior, we have two available positions: Steering Wheel and Driver's Seat."
 					/>
-					*/}
+				
 					<PositionCard 
 						position="Steering Wheel" 
 						description="The steering wheel is an important part of the interaction between the driver and the car. It has to be aesthetically pleasing and functional, leaving a lot of freedom for the person in charge. Experience with freeform modeling is beneficial."
@@ -493,8 +502,9 @@ export default function Join() {
 						position="Seat" 
 						description="The seat of the car, being built into the chassis of this year's concept, needs to be designed in collaboration with the mechanical group members working on the monocoque. Here, aesthetics, functionality and user experience all play a large role."
 					/>
-					*/}
+					
 				</PositionsContainer>
+				*/}
 				{/*
 				<PositionsContainer>
 					<PositionCard 
@@ -586,9 +596,10 @@ export default function Join() {
 				</PositionsContainer>
 				<hr />
 				*/}
+				{/*
 				<h2>Marketing</h2>
 				<PositionsContainer>
-					{/*
+					
 					<PositionCard 
 						position="Marketing Group" 
 						description="As a member of the marketing group you are responsible for making DNV Fuel Fighter visible to the outside. This includes creating a monthly newsletter, taking photos and videos, and updating our followers on Facebook, Instagram and LinkedIn about what we are up to. If you are interested in subjects like photography, online marketing strategies, web development or graphical design, the marketing team may be the place for you!"
@@ -606,7 +617,7 @@ export default function Join() {
 						position="Photo and Video"
 						description="In order to share out progress and activities with our followers, we need to capture and share moments of our production on our social media. The photo and video responsible is in charge of taking pictures and videos of these moments. Are you experienced with a camera or interested in learning about photography, this position may be for you."
 					/>
-					*/}
+					
 					<PositionCard 
 						position="Content Creator"
 						description="Social media platforms such as Facebook, YouTube, Instagram and our webpage are really important to help gain visability and market the progress of DNV Fuel Fighter. As a content creator you will have a lot of freedom to create what you think might help communicate our message of efficiency and sustainable development. Either through articles, videos or our social media channels. "
@@ -621,12 +632,16 @@ export default function Join() {
 						description="As a voluntary organization we live on sponsorships and possible prize money. As resposible for business relations you will contact businesses and other organizations to find sponsors and collaborators, and maintain old relations. If you are studying economics or administration this is a great experience and practice"
 						Social media platforms such as Facebook, Instagram and our webpage are really important to help market the progress of DNV Fuel Fighter. Our social media responsible creates posts and stories to interact with our followers.
 					/>
-					*/}
+					
 					
 				</PositionsContainer>
-				
+				*/}
 				<Title>Apply</Title>
-				<JoinForm />
+				<PositionCard 
+						position=""
+						description="We are currently not hiring, but we are always on the lookout for people interested in our project! "
+					/>
+				<JoinForm /> 
 
 				{/* <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/4CWazjpxWbrPAmqx5"><Button>Application form</Button></a> */}
 			</Section>
