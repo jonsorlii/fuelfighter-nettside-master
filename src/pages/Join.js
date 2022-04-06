@@ -41,7 +41,7 @@ const IntroCard = styled.div`
 	font-size: 16px;
 `;
 
-function PositionCard({ position, description }) {
+function PositionCard({ position, description, linebreaker = "" }) {
 	const Card = styled.div`
 		position: relative;
 		display: inline-block;
@@ -71,6 +71,7 @@ function PositionCard({ position, description }) {
 		<Card>
 			<Title>{position}</Title>
 			<Description dangerouslySetInnerHTML={{ __html: description }} />
+			<Description dangerouslySetInnerHTML={{ __html: linebreaker }} />
 		</Card>
 	)
 }
@@ -148,7 +149,7 @@ function JoinForm() {
 	};
 
 	// const positions = ["Marketing", "Mechanical", "Autonomous", "Electrical", "Design", "Group Leader"];
-	// const positions = ['Project Manager', 'Assistant project manager', 'Head of Finance', 'Technical leader', 'Systems Engineer', 'Mechanical Group Leader', 'Autonomous Group Leader', 'Electrical Group Leader', 'Design Group Leader', 'Marketing Group Leader', 'Open Application']
+	//const positions = ['Project Manager', 'Assistant project manager', 'Technical leader',  'Mechanical Group Leader', 'Autonomous Group Leader', 'Electrical Group Leader', 'Design Group Leader', 'Head of Finance', 'Head of Marketing', 'Software Group Leader']
 	//const positions = ["Head of Finance", "Mechanical Group Leader", "Design Group Leader", "Marketing Group Leader", "Mechanical Member", "Design Member", "Software Member", "Autonomous Member", "Electrical Member", "Social Media", "Web Developer", "Photo and Video", "Graphical Design", "Business Relations", "Event Manager", "Open Application"];
 	const positions = ["Open application"];
 	const handleCheckbox = (event, position) => {
@@ -257,17 +258,78 @@ export default function Join() {
 
 				<IntroCard>
 					As a cross-disciplinary project we need students from every field of study. We are usually a team of 45 students, and always make sure some of them are exchange students. We like to have a good mixture of people from every year of study, to get good group dynamic and a good work culture to make people want to continue over several years. {/*By being a part of our team you get 7.5 credits you can use in you study plan.*/}
+
 				</IntroCard>
 				<PositionsContainer>
-					{/* <PositionCard
+				<PositionCard
+						position="Open application"
+						description= "We are currently not hiring, but we are always interested in talking to engaging students who wants to learn more about DNV Fuel Fighter and what we do!"
+					/>
+
+				</PositionsContainer>
+				{/*
+				<h2>Board Members</h2>
+				<PositionsContainer>
+					<PositionCard
 						position="Project Manager"
-						description="As project manager you are the main responsible for DNV Fuel Fighter’s overall progress, and you will have the overall responsibility for ensuring the success for all phases of the team’s work, from initiation to closure. This means that you will be involved in every part of the organisation, and will have to work with both technical problems, marketing and general administration. As PM you are also our public face, and will have to talk to sponsors, organizers of the SEM-event, NTNU and many others. <br/> <br/>
-						This position gives what we consider a rather unique experience in working with and managing a fairly large team and engineering project. We do not demand any previous experience in leadership, and encourage everyone interested to apply, but as the PM of a technical student organisation you should have some interest in both technical and administrative tasks. But most importantly we are looking for you who are organised, dedicated and keen to work hard to take both the car and team to the next level!"
+						description="As project manager you are the main responsible for DNV Fuel Fighter’s overall progress, and you will have the overall responsibility for ensuring the success for all phases of the team’s work, from initiation to closure. This means that you will be involved in every part of the organization and will work with both technical, marketing and operational challenges. As project manager, you are the face of the organization, and manage our relations with NTNU, sponsors, and other parties. 
+						"
+						linebreaker = "
+						This position gives a unique experience in working with and managing a large technical project. We do not demand any previous experience in leadership, and encourage anyone interested to apply, but as the PM of a technical student organization you should have some interest in both technical and administrative tasks. Most importantly, we are looking for someone who is dedicated to take the car and team to the next level.
+						"
 					/>
 					<PositionCard
 						position="Assistant project manager"
-						description="The assistant project manager(APM) works closely with the project manager(PM) to ensure that the administrative side of the project runs smoothly. The PM will have a lot to do, and you will help her/him with tasks that are ultimately their responsibility. Therefore, it is important to communicate well and work together. You will also work with the head of finance when dealing with budgeting, financing and matters of economy. In team 2022 the Assistant Project Manager will be HR responsible, meaning you will make sure the members are happy and handle possible HR situations that may arise. Some of the tasks you will have is arranging recruitment, plan employe interviews, have contact with sponsors etc. Since you will be working with the PM and share a lot of the tasks, you could be a part of deciding who is doing which tasks."
-					/> */}
+						description="The assistant project manager (APM) works closely with the project manager (PM) to ensure that the operational side of the project runs smoothly. You will be in close contact with all the leaders to plan and execute strategies to achieve the team’s goals. It’s a diverse role in which you will encounter many unpredictable challenges.
+						"linebreaker ="
+						You will work with the Head of Finance on important matters like budgeting and forecasting. The Assistant Project Manager is key in developing HR standards and ensuring a good culture throughout the organization.
+						"
+					/> 
+					<PositionCard
+						position="Technical leader"
+						description="The technical leader’s most important task is to coordinate the technical groups and ensure that goals and deadlines are fulfilled. You are the link between all the technical groups, and have the responsibility to facilitate cooperation between them.  You are also responsible for consolidating the documentation required for the competition, and making sure that the car passes the technical inspection.
+						"linebreaker ="
+						You need to learn about every subsystem to a certain level, but to a limited degree. The role doesn’t require any specific prior knowledge, but it helps to have some experience with mechanical, electrical, or software systems."
+					/>
+										<PositionCard
+						position="Head of Finance"
+						description="As Head of Finance, you are responsible for all financial activities within the company. This includes developing and maintaining our budget, financial forecasting, and accounting. You will have to work closely with the Project Manager and Deputy Project Manager to ensure that DNV Fuel Fighter has the capital to pursue its technical goals and has long-term financial viability. "linebreaker ="As a member of the Marketing and Finance Team, you will also get to work on deal negotiations with industry leaders for sponsor deals, building an extensive professional network! There are no prerequisites for the role, but any accounting knowledge/experience is advantageous. "
+					/>
+				</PositionsContainer>
+				<h2>Group Leaders</h2>
+				<PositionsContainer>
+					<PositionCard
+						position="Mechanical Group Leader"
+						description="The mechanical group leader is responsible for ensuring that the mechanical systems function according to the specifications. This entails working closely with both your team and the other group leaders to plan and organize for your team to make sure that all necessary tasks are completed within their deadlines. You will be a role model for your team and should try to maintain a positive culture and provide them with the tools they need to succeed. 
+						"linebreaker ="
+						You will have the opportunity to learn about the way we design the car, using Fusion 360 for CAD, and the range of software for analysis and optimization. During the development phase in the fall, you will have the opportunity to influence the decisions on how to improve the car. You will be working closely with the technical leader to set goals and plan the year. The three main avenues of improvement are: reducing weight, reducing rolling resistance and improving the aerodynamics. Depending on your background and interest, you will have the opportunity to influence the direction and focus on the mechanical development.
+						"
+					/>
+					<PositionCard
+						position="Electrical Group Leader"
+						description="As the leader of the electrical group, you will gain insight into all the electrical systems needed to make an energy-efficient, electric car. This includes everything from motors and motor controllers, to the systems in the steering wheel and dashboard. It is important to improve the efficiency of the electrical system, which means improving both hardware designs and software on microcontrollers. Additionally, you will be responsible for coordinating everything the team needs for the electrical systems while working on your own subsystem.
+						"linebreaker ="
+						Being the electrical group leader is a fun, valuable, and at times challenging experience. You will learn a lot about electrical systems, system design and low-level programming, as well as leading a group towards a common goal. As the leader you will get to  influence the whole electrical system and help guide the group members when they encounter problems.  
+						"
+					/>
+					<PositionCard
+						position="Design Group Leader"
+						description="The design group leader manages and drives the overall process of the design of both the interior and exterior of the car. You are primarily responsible for aiming to win the annual SEM design award. The look and feel of the dashboard, steering wheel, and the rest of the interior has to match the exterior aesthetic of the car which includes its colour, lights and logo placements. You will lead your group to bridge both the interior and exterior ideas into one overarching style. You will also be responsible for ensuring that the car is designed according to the specifications of the SEM rules and that the design works cohesively with the technical details of the mechanical and electrical groups. 
+						"
+					/>
+					<PositionCard
+						position="Autonomous Group Leader"
+						description="As leader for the autonomous group you are responsible for the continued development of the driverless car, ensuring that the subsystems are working both individually and together. You will lead a dedicated group to create solutions for the future of mobility. 
+						"linebreaker =" The group utilises sensors such as LiDAR, Stereo cameras and INS (Inertial Navigation System) for detecting our environment. Then SLAM, Image processing and sensor fusion is used to create a detailed description of our environment. Lastly a path planning and a nonlinear MPC is used to decide what the car should do. These commands are then sent to our actuators. You will acquire valuable, multidisciplinary knowledge by working with these systems."
+					/>
+					<PositionCard
+						position="Software Group Leader"
+						description="As the leader of the Software group, you are responsible for leading the development of our in-house software, which consists of a simulator and our driving strategy. The group incorporates a wide range of methods within software development, from game development to numerical analysis and algorithms. As the leader, you are responsible for ensuring these systems perform according to their specification, and that they are finished and ready prior to competition. "
+					/>
+					<PositionCard
+						position="Head of Marketing"
+						description="As head of Marketing you will be working towards making DNV Fuel Fighter’s team visible to students and sponsors. The group is responsible for sponsor relations, social media strategy, external and internal events, and content creation. You will be the one with an overview of what everyone is doing and help out if needed. This gives you a unique opportunity to be a part of a creative and innovative group. You are the connection between the board and the marketing group, so you need to communicate well with both and learn how to find answers to questions the group might have."
+					/>
 					{/*
 					<PositionCard
 						position="Head of Finance"
@@ -276,9 +338,10 @@ export default function Join() {
 					{/* <PositionCard
 						position="Technical leader"
 						description="The technical leader’s most important task is to make sure that the car is ready in time for the competition. This means helping the team do their work and overcoming obstacles and making sure that the system is within the rules. You need to have a good general knowledge of each subsystem, but not necessarily every single detail. It also helps to have both experience within mechanics, electronics and software, but it is not necessary. You also have other tasks, such as reaching out to potential sponsors. "
-					/> */}
+					/> 
 				</PositionsContainer>
-				{/*<hr />*/}
+				*/}
+				
 				<PositionsContainer>
 				{/*
 					<PositionCard
@@ -636,11 +699,7 @@ export default function Join() {
 					
 				</PositionsContainer>
 				*/}
-				<Title>Apply</Title>
-				<PositionCard 
-						position=""
-						description="We are currently not hiring, but we are always on the lookout for people interested in our project! "
-					/>
+				{/*<Title>Apply</Title>*/}
 				<JoinForm /> 
 
 				{/* <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/4CWazjpxWbrPAmqx5"><Button>Application form</Button></a> */}

@@ -26,6 +26,7 @@ import MomentumIndustrial from '../assets/sponsors/colored/momentumIndustrial.jp
 import nskog from '../assets/sponsors/colored/Nskog.png'
 import EWGlassOgPlast from '../assets/sponsors/colored/EWGlassOgPlast.jpg'
 import FRAMO from '../assets/sponsors/colored/FRAMO.png'
+import NeptuneEnergy from '../assets/sponsors/colored/NeptuneEnergy.jpg'
 
 export default function Sponsors() {
     return (
@@ -55,22 +56,17 @@ export default function Sponsors() {
                     <h2>Platinum sponsors</h2>
                     <div className="sponsor third">
                         <img alt="Ouster" src={Ouster}  />
-                        <p>Ouster is a team of software, hardware, business, and manufacturing experts building the next generation of high-resolution lidar sensors.<br/><br/><br/><br/></p>
+                        <p>Ouster is a team of software, hardware, business, and manufacturing experts building the next generation of high-resolution lidar sensors.<br/><br/></p>
                         <a target="_blank" rel="noopener noreferrer" href="https://ouster.com/" className="button flat">Visit</a>
                     </div>
                     <div className="sponsor third">
                         <img alt="Alva industries" src={AlvaIndustries} />
-                        <p>Alva was founded to meet the growing global energy demand with renewable technologies. We develop electric generators for production of clean energy and electric motors to convert this energy into motion. <br/><br/><br/></p>
+                        <p>Alva was founded to meet the growing global energy demand with renewable technologies. We develop electric generators for production of clean energy and electric motors to convert this energy into motion.<br/></p>
                         <a target="_blank" rel="noopener noreferrer" href="https://alvaindustries.com/" className="button flat">Visit</a>
-                    </div>
-                    <div className="sponsor third">
-                        <img alt="Eker" src={Eker}  />
-                        <p>The EKER team consists of highly skilled personnel from a wide range of disciplines. Industrial designers, art directors, graphic designers, engineers, tool- and mechanical technicians, economists and project leaders all work hand in hand to create the next high leveled product.</p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://ekerdesign.com/" className="button flat">Visit</a>
                     </div>
                      <div className="sponsor third">
                         <img alt="VectorNav" src={VectorNav}  />
-                        <p> Vectornav is a leader in high-performance navigation solutions, using the newest GPS/GNSS technologies. They supply systems to military, marine, aerospace and robotics industries worldwide. </p>
+                        <p> Vectornav is a leader in high-performance navigation solutions, using the newest GPS/GNSS technologies. They supply systems to military, marine, aerospace and robotics industries worldwide. <br/> </p> 
                         <a target="_blank" rel="noopener noreferrer" href="https://www.vectornav.com/" className="button flat">Visit</a>
                     </div>
                 </div>
@@ -83,6 +79,11 @@ export default function Sponsors() {
 
                 <div className="grid" >
                     <h2>Silver sponsors</h2>
+                     <div className="sponsor third">
+                        <img alt="Eker" src={Eker}  />
+                        <p>The EKER team consists of highly skilled personnel from a wide range of disciplines. Industrial designers, art directors, graphic designers, engineers, tool- and mechanical technicians, economists and project leaders all work hand in hand to create the next high leveled product.<br/><br/><br/><br/></p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://ekerdesign.com/" className="button flat">Visit</a>
+                    </div>
                     <div className="sponsor third" >
                         <img alt="4test" src={FourTest} />
                         <p>4Test is a leader in measurement solutions and expertise, building on the foundation of Keysight Technologies measurement equipment and technology. Our Mission is to provide engineers, Scientists and technicians the best-fit measurement solutions to help them to measure, test and validate the performance of their electronic, wireless and photonic devices. <br/> <br/></p>
@@ -95,8 +96,13 @@ export default function Sponsors() {
                     </div> 
                     <div className="sponsor third">
                         <img alt="Framo" src={FRAMO} />
-                        <p>Based in Bergen, Norway, Framo has been the recognized leader in pumping systems for the marine industry for more than half a century. Customers around the globe turn to them, both for pumps and for expertise in meeting their challenges. Discover Framos unique solutions on their website. <br/><br/><br/><br/></p>
+                        <p>Based in Bergen, Norway, Framo has been the recognized leader in pumping systems for the marine industry for more than half a century. Customers around the globe turn to them, both for pumps and for expertise in meeting their challenges. Discover Framos unique solutions on their website.<br/><br/><br/><br/><br/></p>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.framo.com/" className="button flat">Visit</a>
+                    </div> 
+                    <div className="sponsor third">
+                        <img alt="NeptuneEnergy" src={NeptuneEnergy} />
+                        <p>Neptune Energy is an independent global E&P company with operations across the North Sea, North Africa and Asia Pacific. The business had a production of 130,000 net barrels of oil equivalent per day in 2021. Transitioning towards a greener future and net zero by 2030, Neptune Energy have created a three-year environmental roadmap where the goal is to lower emissions and explore endeavors within electrification, carbon capture storage and hydrogen.</p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.neptuneenergy.com/" className="button flat">Visit</a>
                     </div> 
                 </div>
                 <div className="grid">
