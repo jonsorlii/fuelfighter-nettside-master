@@ -27,6 +27,13 @@ import nskog from '../assets/sponsors/colored/Nskog.png'
 import EWGlassOgPlast from '../assets/sponsors/colored/EWGlassOgPlast.jpg'
 import FRAMO from '../assets/sponsors/colored/FRAMO.png'
 import NeptuneEnergy from '../assets/sponsors/colored/NeptuneEnergy.jpg'
+import Titeoevery from '../assets/sponsors/colored/TietoEvrery.png'
+import GKN from '../assets/sponsors/colored/GKN.png'
+import Microchip from '../assets/sponsors/colored/Microchip.png'
+import Fagne from '../assets/sponsors/colored/FagneLogo.png'
+import Haugaland from '../assets/sponsors/colored/Haugaland.png'
+
+
 
 export default function Sponsors() {
     return (
@@ -69,6 +76,11 @@ export default function Sponsors() {
                         <p> Vectornav is a leader in high-performance navigation solutions, using the newest GPS/GNSS technologies. They supply systems to military, marine, aerospace and robotics industries worldwide. <br/> </p> 
                         <a target="_blank" rel="noopener noreferrer" href="https://www.vectornav.com/" className="button flat">Visit</a>
                     </div>
+                    <div className="sponsor third">
+                        <img alt="Zolve" src={Zolve} />
+                        <p>Zolve originates from Trondheims technological environment, and offers consulting services to a wide range of companies. Zolve is spesialists in electronics, FPGA and software, with over 60 years of experience, a core part of Zolve's success comes from openness and close communication between customer and developer, which are essential in order to achieve the best result.</p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://zolve.no/" className="button flat">Visit</a>
+                    </div> 
                 </div>
 
                 {/* 
@@ -89,11 +101,6 @@ export default function Sponsors() {
                         <p>4Test is a leader in measurement solutions and expertise, building on the foundation of Keysight Technologies measurement equipment and technology. Our Mission is to provide engineers, Scientists and technicians the best-fit measurement solutions to help them to measure, test and validate the performance of their electronic, wireless and photonic devices. <br/> <br/></p>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.4test.no" className="button flat">Visit</a>
                     </div>
-                    <div className="sponsor third">
-                        <img alt="Zolve" src={Zolve} />
-                        <p>Zolve originates from Trondheims technological environment, and offers consulting services to a wide range of companies. Zolve is spesialists in electronics, FPGA and software, with over 60 years of experience, a core part of Zolve's success comes from openness and close communication between customer and developer, which are essential in order to achieve the best result.</p>
-                        <a target="_blank" rel="noopener noreferrer" href="https://zolve.no/" className="button flat">Visit</a>
-                    </div> 
                     <div className="sponsor third">
                         <img alt="Framo" src={FRAMO} />
                         <p>Based in Bergen, Norway, Framo has been the recognized leader in pumping systems for the marine industry for more than half a century. Customers around the globe turn to them, both for pumps and for expertise in meeting their challenges. Discover Framos unique solutions on their website.<br/><br/><br/><br/><br/></p>
@@ -125,13 +132,38 @@ export default function Sponsors() {
                     <div className="sponsor third">
                         <img alt="Nskog" src={nskog} />
                         <p>Norske Skog Skogn is actively working towards the green shift and the global circular economy through value creation of renewable resources such as norwegian 
-                        spruce and hydro power. <br/><br/> <br/> <br/><br/></p>
+                        spruce and hydro power. <br/><br/> <br/> <br/> <br/><br/></p>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.norskeskog.com/" className="button flat">Visit</a>
                     </div>
                      <div className="sponsor third">
                         <img alt="EWGlassOgPlast" src={EWGlassOgPlast} />
-                        <p>Ew Glass & Plast primarily conducts wholesale trading activities with the purchase and sale of glass, plastic, fittings and accessories. They offer short delivery times on their products. EW Glass & Plast always aims to provide maximum service for all their customers, and grow their reputation as a supplier! <br/><br/></p>
+                        <p>Ew Glass & Plast primarily conducts wholesale trading activities with the purchase and sale of glass, plastic, fittings and accessories. They offer short delivery times on their products. EW Glass & Plast always aims to provide maximum service for all their customers, and grow their reputation as a supplier!  <br/><br/><br/></p>
                         <a target="_blank" rel="noopener noreferrer" href="http://www.ewglass.no/" className="button flat">Visit</a>
+                    </div>
+                    <div className="sponsor third">
+                        <img alt="TietoEvery" src={Titeoevery} />
+                        <p>Tietoevery is a leading technology company within cloud, data and software - located in more than 90 countries with over 24 000 employees. Besides a strong Nordic root and our common IT-synergy, Tietoevery has a strong climate focus with their Sustainability game plan 2023; during 2021 their data centers and offices ran on 92% carbon-free electricity.</p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.tietoevry.com/no/" className="button flat">Visit</a>
+                    </div>
+                    <div className="sponsor third">
+                        <img alt="GKN" src={GKN} />
+                        <p>GKN Aerospace Norway AS (GAN) manufactures complex components for jet engines and gas turbines for the world’s largest aircraft manufacturers. GAN have extensive experience in the industry and are a centre of excellence within advanced mechanical production.</p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.gknaerospace.com/en/about-gkn-aerospace/locations/gkn-aerospace-in-europe/norway-as/" className="button flat">Visit</a>
+                    </div>
+                    <div className="sponsor third">
+                        <img alt="Microchip" src={Microchip} />
+                        <p>Microchip Technology Incorporated is a leading provider of smart, connected and secure embedded control solutions. The company's solutions serve more than 120,000 customers across the industrial, automotive, consumer, aerospace and defense, communications and computing markets.</p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.microchip.com/" className="button flat">Visit</a>
+                    </div>
+                    <div className="sponsor third">
+                        <img alt="Fagne" src={Fagne} />
+                        <p> Fagne is a grid company supplying electricity to about 150,000 inhabitants on Haugalandet, Sunnhordland, Indre Ryfylke and parts of Hardanger in Norway. Besides taking care of the socially critical infrastructure – Fagne is also ensuring the green shift by being heavily involved and developing the national test center at Utsira – where various energy technology and control systems can be tested in a closed network! </p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://fagne.no/" className="button flat">Visit</a>
+                    </div>
+                    <div className="sponsor third">
+                        <img alt="HaugalandKraft" src={Haugaland} />
+                        <p>Headquartered in Haugesund with more than 500 employees – the Haugaland Kraft group has operations ranging from renewable production, distribution and sales of electricity, as well as energy services and telecom! Haugaland Kraft is also involved in solar power, charging, smart energy services & communications – hence, enabling the green shift by sustainable solutions! </p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://hkraft.no/" className="button flat">Visit</a>
                     </div>
                 </div>
                 <div className="grid">
