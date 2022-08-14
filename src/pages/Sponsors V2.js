@@ -32,8 +32,9 @@ import GKN from '../assets/sponsors/colored/GKN.png'
 import Microchip from '../assets/sponsors/colored/Microchip.png'
 import Fagne from '../assets/sponsors/colored/FagneLogo.png'
 import Haugaland from '../assets/sponsors/colored/Haugaland.png'
-
-
+import TotalEnergies from '../assets/sponsors/colored/TOTALENERGIES.jpg'
+import Omexom from '../assets/sponsors/colored/OMEXOM.png'
+import Hertz from '../assets/sponsors/colored/HERTZ.png'
 
 export default function Sponsors() {
     return (
@@ -80,6 +81,11 @@ export default function Sponsors() {
                         <img alt="Zolve" src={Zolve} />
                         <p>Zolve originates from Trondheims technological environment, and offers consulting services to a wide range of companies. Zolve is spesialists in electronics, FPGA and software, with over 60 years of experience, a core part of Zolve's success comes from openness and close communication between customer and developer, which are essential in order to achieve the best result.</p>
                         <a target="_blank" rel="noopener noreferrer" href="https://zolve.no/" className="button flat">Visit</a>
+                    </div> 
+                    <div className="sponsor third">
+                        <img alt="TotalEnergies" src={TotalEnergies} />
+                        <p>TotalEnergies is a broad energy company that produces and markets fuels, natural gas and electricity. The company has around 100,000 employees that are committed to better energy that is more affordable, more reliable, cleaner and accessible to as many people as possible. Active in more than 130 countries, their ambition is to become the responsible energy major.</p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://totalenergies.com/" className="button flat">Visit</a>
                     </div> 
                 </div>
 
@@ -164,6 +170,18 @@ export default function Sponsors() {
                         <img alt="HaugalandKraft" src={Haugaland} />
                         <p>Headquartered in Haugesund with more than 500 employees – the Haugaland Kraft group has operations ranging from renewable production, distribution and sales of electricity, as well as energy services and telecom! Haugaland Kraft is also involved in solar power, charging, smart energy services & communications – hence, enabling the green shift by sustainable solutions! </p>
                         <a target="_blank" rel="noopener noreferrer" href="https://hkraft.no/" className="button flat">Visit</a>
+                    </div>
+                    <div className="sponsor third">
+                        <img alt="OMEXOM" src={Omexom} />
+                        <p>OMEXOM Norway is market leader in rolling out charging infrastructure for its clients, offering them nationwide installation and a well-functioning service network.  
+
+As an accelerator of the energy transition OMEXOM foster access to electricity, ensure secure supply, develop sustainable energy and operates within the whole energy value chain. </p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://hkraft.no/" className="button flat">Visit</a>
+                    </div>
+                    <div className="sponsor third">
+                        <img alt="Hertz" src={Hertz} />
+                        <p>The Hertz Corporation is the world's largest car rental company, with 1,900 branches in the United States and 11,000 worldwide.</p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.hertz.no/rentacar/reservation/" className="button flat">Visit</a>
                     </div>
                 </div>
                 <div className="grid">
