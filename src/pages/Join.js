@@ -150,7 +150,7 @@ function JoinForm() {
 		selectedPositions: [],
 	};
 
-	const positions = ["Marketing", "Mechanical", "Autonomous", "Electrical", "Design", "Group Leader"];
+	const positions = ["Marketing", "Mechanical", "Autonomous", "Electrical", "Design", "Software","Group Leader"];
 	//const positions = ['Project Manager', 'Assistant project manager', 'Technical leader',  'Mechanical Group Leader', 'Autonomous Group Leader', 'Electrical Group Leader', 'Design Group Leader', 'Head of Finance', 'Head of Marketing', 'Software Group Leader']
 	//const positions = ["Head of Finance", "Mechanical Group Leader", "Design Group Leader", "Marketing Group Leader", "Mechanical Member", "Design Member", "Software Member", "Autonomous Member", "Electrical Member", "Social Media", "Web Developer", "Photo and Video", "Graphical Design", "Business Relations", "Event Manager", "Open Application"];
 	//const positions = ["Open application"];
